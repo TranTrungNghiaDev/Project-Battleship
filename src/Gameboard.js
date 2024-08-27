@@ -1,9 +1,9 @@
 class Gameboard {
     constructor() {
-        this.cells = [null,null,null,null,null,null];
         this.grids = [];
         for (let index = 0; index < 5; index++) {
-            this.grids.push(this.cells);
+            const copyArr = [null, null, null, null, null];
+            this.grids.push(copyArr);
         }
     }
     placeShip(ship, x = 0, y = 0) {

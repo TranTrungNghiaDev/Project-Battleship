@@ -7,15 +7,15 @@
 </head>
 <body>
     <h1>Project: Battleship</h1>
-    <table>
+    <section id="player-area"></section>
+    <section id="computer-area"></section>
 
-    </table>
     <button id="new-game-btn">New Game</button>
     <dialog id="new-game-dialog">
         <form method="dialog">
             <label for="">Name: </label>
-            <input type="text" placeholder="Enter your name here">
-            <button type="submit">Submit</button>
+            <input id="player-name" type="text" placeholder="Enter your name here" required>
+            <button id="new-game-dialog-btn" type="submit">Submit</button>
         </form>
     </dialog>
 </body>
