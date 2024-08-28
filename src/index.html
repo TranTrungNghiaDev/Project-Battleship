@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project: Battleship</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Project: Battleship</h1>
-    <section id="player-area"></section>
-    <section id="computer-area"></section>
-
+    <div id="ships-area">
+      <section id="player-ships-area"></section>
+      <section id="computer-ships-area"></section>
+    </div>
     <button id="new-game-btn">New Game</button>
     <dialog id="new-game-dialog">
-        <form method="dialog">
-            <label for="">Name: </label>
-            <input id="player-name" type="text" placeholder="Enter your name here" required>
-            <button id="new-game-dialog-btn" type="submit">Submit</button>
-        </form>
+      <form method="dialog">
+        <label for="player-name">Name: </label>
+        <input
+          id="player-name"
+          type="text"
+          placeholder="Enter your name here"
+          required
+        />
+        <label for="">Ship 1 Coordinates</label>
+        <div class="coordinate-inputs">
+          <input
+            id="ship-1-x"
+            type="number"
+            name="ship-1-x"
+            placeholder="x"
+            min="0"
+            max="4"
+            required
+          />
+          <input
+            id="ship-1-y"
+            type="number"
+            name="ship-1-y"
+            placeholder="y"
+            min="0"
+            max="4"
+            required
+          />
+        </div>
+        <label for="">Ship 2 Coordinates</label>
+        <div class="coordinate-inputs">
+          <input
+            id="ship-2-x"
+            type="number"
+            name="ship-2-x"
+            placeholder="x"
+            min="0"
+            max="3"
+            required
+          />
+          <input
+            id="ship-2-y"
+            type="number"
+            name="ship-2-y"
+            placeholder="y"
+            min="0"
+            max="4"
+            required
+          />
+        </div>
+        <label for="">Ship 3 Coordinates</label>
+        <div class="coordinate-inputs">
+          <input
+            id="ship-3-x"
+            type="number"
+            name="ship-3-x"
+            placeholder="x"
+            min="0"
+            max="4"
+            required
+          />
+          <input
+            id="ship-3-y"
+            type="number"
+            name="ship-3-y"
+            placeholder="y"
+            min="0"
+            max="2"
+            required
+          />
+        </div>
+        <button id="new-game-dialog-btn" type="submit">Submit</button>
+      </form>
     </dialog>
-</body>
+  </body>
 </html>

@@ -1,11 +1,24 @@
+:root {
+    font-size: 1rem;
+}
+
 * {
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+}
+
+#ships-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 section {
     display: grid;
-    width: 50%;
-    margin: 20px auto;
     grid-template-columns: repeat(5,50px);
     grid-template-columns: repeat(5, 50px);
 }
@@ -15,10 +28,50 @@ section button {
     height: 50px;
     outline: none;
     border: 1px solid gray;
+    font-size: 2rem;
 }
 
 .player-ship-cell {
     background-color: aquamarine;
     border: 1px solid rgb(0, 0, 255);
     outline: 1px solid rgb(2, 2, 255);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+dialog {
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin: 10px auto;
+}
+
+.coordinate-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="number"] {
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#new-game-dialog-btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
